@@ -12,7 +12,7 @@ import org.springframework.web.servlet.NoHandlerFoundException;
 /**
  * MyExceptionHandler
  *
- * @author bobbi
+ * @author Cruiying
  * @date 2018/10/07 14:33
  * @email 571002217@qq.com
  * @description 统一异常处理器
@@ -34,6 +34,11 @@ public class MyExceptionHandler {
         return result;
     }
 
+    /**
+     * 404错误
+     * @param e
+     * @return
+     */
     @ExceptionHandler(NoHandlerFoundException.class)
     public Result handlerNoFoundException(Exception e){
         log.error(e.getMessage(),e);

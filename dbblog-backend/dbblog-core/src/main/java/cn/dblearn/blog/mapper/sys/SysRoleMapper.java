@@ -11,7 +11,7 @@ import java.util.List;
  *  Mapper 接口
  * </p>
  *
- * @author bobbi
+ * @author Cruying
  * @since 2018-10-08
  */
 @Mapper

@@ -21,8 +21,8 @@ import org.springframework.util.StringUtils;
 @Service
 public class SysUserTokenServiceImpl implements SysUserTokenService {
 
-    //12小时后过期
-    private final static int EXPIRE = 3600 * 12;
+    //30天后过期
+    private final static int EXPIRE = 3600 * 24 * 30;
 
     @Autowired
     private RedisUtils redisUtils;
